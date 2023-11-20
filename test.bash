@@ -9,15 +9,16 @@ res=0
 
 ### I/O TEST ###
 out=$(seq 5 | ./plus)
-++ seq 5
-++ ./plus
-+ out=15
-[ "${out}" = 15 ] || ng ${LINENO}
-+ '[' 15 = 15 ']'
-
+  [ "${out}" = 15 ] || ng ${LINENO}
+    　 
+  ### STRANGE INPUT ###
+  out=$(echo あ | ./plus)
+  [ "$?" = 1 ]      || ng ${LINENO}
+  [ "${out}" = "" ] || ng ${LINENO}
+    　 
+  out=$(echo | ./plus) #空文字
+  [ "$?" = 1 ]      || ng ${LINENO}
+  [ "${out}" = "" ] || ng ${LINENO}
+    　 
 [ "$res" = 0 ] && echo OK
-+ '[' 0 = 0 ']'
-+ echo OK
-OK
-exit $res
-+ exit 0
+  exit $res
