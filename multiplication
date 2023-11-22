@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2023 Ryota Ebisawa
+# SPDX-License-Identifier: BSD-3-Clause
+num1 = float(input("最初の数値を入力してください: "))
+num2 = float(input("次の数値を入力してください: "))
+
+result = num1 * num2
+
+print("掛け算の結果は:", result)
