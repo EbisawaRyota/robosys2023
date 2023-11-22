@@ -1,5 +1,5 @@
 #!/bin/bash -xv
-# SPDX-FileCopyrightText: 2022 Ryuichi Ueda
+# SPDX-FileCopyrightText: 2023 Ryuichi Ueda
 # SPDX-License-Identifier: BSD-3-Clause
 
 $ ./test.bash
