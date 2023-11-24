@@ -25,5 +25,3 @@
 * このパッケージのコードは、下記のスライド(CC-BY-SA 4.0 by Ryuihi Ueda)のものを、本人の許可を得て自身著作としたものです. 
 * ryuichiueda/my_slides robosys_2022 
 * © 2023 Ryota Ebisawa
-
-© 2023 Ryota Ebisawa
