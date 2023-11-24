@@ -1,10 +1,10 @@
 # plusコマンド
-![test] (https://github.com/EbisawaRyota/robosys2023/blob/main/.github/workflows/test.yml)
+![test] (https://github.com/EbisawaRyota/robosys2023/b:wqlob/main/.github/workflows/test.yml)
 
 標準入力から読み込んだ数字を足す。
 
 ## 使用方法
-➀
+*　robosys2023のリポジトリでseqの後ろに数字を代入してその後にplusと打つと実行される
 
 ## 必要なソフト
 * Python
