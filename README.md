@@ -4,7 +4,7 @@
 ![test](https://github.com/EbisawaRyota/robosys2023/actions/workflows/test.yml/badge.svg)
 
 ## インストール方法
-
+このリポジトリを使用したい任意の場所にクローンして使用する
 ```
 git clone https://github.com/EbisawaRyota/robosys2023.git
 ```
