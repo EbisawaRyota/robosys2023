@@ -16,6 +16,7 @@ git clone https://github.com/EbisawaRyota/robosys2023.git
 $ seq 10 |./plus
 $ 55
 ```
+seq 10で数字を1から10足される
 
 ## 必要なソフト
 * Python
