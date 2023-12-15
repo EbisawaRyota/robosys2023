@@ -13,8 +13,8 @@ git clone https://github.com/EbisawaRyota/robosys2023.git
  
 ## 実行方法
 ```
-$ cd robosys2023
-$ seq 5 |./plus
+$ seq 10 |./plus
+$ 55
 ```
 
 ## 必要なソフト
