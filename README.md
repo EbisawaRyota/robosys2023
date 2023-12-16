@@ -8,14 +8,6 @@
 ```
 git clone https://github.com/EbisawaRyota/robosys2023.git
 ```
-## subtraction
-標準入力から読み込んだ数字を引く。
-### 実行例
-```
-$ seq 10 |./subtraction
-$ -55
-```
-seq 10で１から順に１０までの数字を引く
 
 ## plus
 標準入力から読み込んだ数字を足す。
@@ -25,6 +17,15 @@ $ seq 10 |./plus
 $ 55
 ```
 seq 10で１から順に1から10までの数字を足す
+
+## subtraction
+標準入力から読み込んだ数字を引く。
+### 実行例
+```
+$ seq 10 |./subtraction
+$ -55
+```
+seq 10で１から順に１０までの数字を引く
 
 ## multiplication
 標準入力から読み込んだ数字をかける。
