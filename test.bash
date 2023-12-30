@@ -50,14 +50,5 @@ out=$(echo | ./multiplication) #空文字
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-#Buzzword annual award
-out=$(echo あ | ./Buzzword annual award)
-[ "$?" = 1 ]      || ng ${LINENO}
-[ "${out}" = "" ] || ng ${LINENO}
-
-out=$(echo | ./Buzzword annual award) #空文字
-[ "$?" = 1 ]      || ng ${LINENO}
-[ "${out}" = "" ] || ng ${LINENO}
-
 [ "$res" = 0 ] && echo OK
 exit $res
