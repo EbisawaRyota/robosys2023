@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2023 Ryota Ebisawa
 # SPDX-License-Identifier: BSD-3-Clause
 import sys
+
 trendy_words = {
     2000: "モバイル",
     2001: "ドットコム",
