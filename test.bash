@@ -50,14 +50,21 @@ out=$(echo | ./multiplication) #空文字
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-#Buzzword
-out=$(echo | ./Buzzword)
-[ "$?" = 1 ]      || ng ${LINENO}
-[ "${out}" = "" ] || ng ${LINENO}
-
-out=$(echo "あ" | ./Buzzword)
-[ "$?" = 1 ]      || ng ${LINENO}
-[ "${out}" = "" ] || ng ${LINENO}
-
 [ "$res" = 0 ] && echo OK
 exit $res
+
+out=$(echo | ./Buzzword)
+expected="年数を入力してください（2000年から2023年まで）:"
+if [ "${out}" = "${expected}" ]; then
+    echo OK
+else
+    echo NG
+fi
+
+out=$(echo "あ" | ./Buzzword)
+expected="有効な年数を入力してください"
+if [ "${out}" = "${expected}" ]; then
+    echo OK
+else
+    echo NG
+fi
