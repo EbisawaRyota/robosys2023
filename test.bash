@@ -51,7 +51,7 @@ out=$(echo | ./multiplication) #空文字
 [ "${out}" = "" ] || ng ${LINENO}
 
 #Buzzword annual award
-out=$(echo あ | ./multiplication)
+out=$(echo あ | ./Buzzword annual award)
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
