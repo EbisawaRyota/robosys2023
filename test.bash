@@ -50,22 +50,14 @@ out=$(echo | ./multiplication) #空文字
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
+#Buzzword
+out=$(echo | ./Buzzword)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
+out=$(echo "あ" | ./Buzzword)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
 [ "$res" = 0 ] && echo OK
 exit $res
-
-out=$(echo | python your_script.py)
-expected="年数を入力してください（2004年から2023年まで）:"
-if [ "${out}" = "${expected}" ]; then
-    echo "空文字のテスト: パスしました！"
-else
-    echo "空文字のテスト: 失敗しました..."
-fi
-
-# 不正な文字列を入力した場合のテスト
-out=$(echo "あ" | python your_script.py)
-expected="有効な年数を入力してください"
-if [ "${out}" = "${expected}" ]; then
-    echo "不正な文字列のテスト: パスしました！"
-else
-    echo "不正な文字列のテスト: 失敗しました..."
-fi
